@@ -1,13 +1,11 @@
 # Crypto-Tracker
 
-Love investing and delving into the world of cryptocurrencies? This app is for you!
+I built this iOS app to watch live cryptocurrency prices update in real time, mostly as a way to practice Swift and working with a REST API. It shows major crypto prices refreshing every second in both US dollars and Canadian dollars.
 
-I created an IOS application that displays major cryptocurrency price changes per second in USD dollars or Canadian dollars using CoinGecko Data REST API.
+The data comes from the CoinGecko REST API, and the app re-fetches it once per second so the numbers stay current. Switching which currencies are displayed only takes a couple of lines in the parsing code.
 
-To change and update your choice of currencies to convert crypto prices it can be done using 2-3 code statements!
-
-### Gif#1: Convert Crypto Currency Values into USD and CAD
-##### Used CoinGecko's API to fetch updated data from JSON object containing the CAD Currency. The app fetches data (updates) every second.
+### Gif#1: Live prices refreshing every second
+##### The app calls the CoinGecko API on a one-second timer and updates each label whenever new JSON data comes back.
 <p align="center">
   <img src="http://g.recordit.co/Vpw6o6F4to.gif" alt="animated" />
 </p>
@@ -15,8 +13,8 @@ To change and update your choice of currencies to convert crypto prices it can b
 <br>
 <br>
 
-### Gif#2: Convert Crypto Currency Values into USD and CAD
-##### Fetched updated data using CAD JSON Object from API
+### Gif#2: Prices shown in USD and CAD
+##### The same API response is parsed to display each value in both US and Canadian dollars.
 <p align="center">
   <img src="http://g.recordit.co/dsTfVDo5AN.gif" alt="animated" />
 </p>
